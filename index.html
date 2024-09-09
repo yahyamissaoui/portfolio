@@ -4,73 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yahya Missaoui - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Yahya Missaoui</h1>
-        <p>Software Developer | AI Enthusiast | Web Developer</p>
-        <a href="https://www.linkedin.com/in/yahya-missaoui" target="_blank">LinkedIn</a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Yahya Missaoui</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="text-center py-5 bg-primary text-white">
+        <div class="container">
+            <h1 class="display-4">Yahya Missaoui</h1>
+            <p class="lead">Software Developer | AI Enthusiast | Web Developer</p>
+            <a href="https://www.linkedin.com/in/yahya-missaoui" target="_blank" class="btn btn-outline-light">LinkedIn</a>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I’m Yahya Missaoui, a Bachelor of Science in Informatik student at Goethe University with experience in web development, machine learning, and cloud services.</p>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h2 class="mb-4">About Me</h2>
+                    <p class="lead">I’m Yahya Missaoui, a Bachelor of Science in Informatik student at Goethe University with experience in web development, machine learning, and cloud services.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Python, Java, C++, JavaScript, TypeScript, Bash</li>
-            <li>Web Development: HTML, CSS, React, Node.js</li>
-            <li>Databases: SQL, MongoDB</li>
-            <li>Tools: Git, Docker, Linux, Kubernetes</li>
-            <li>Machine Learning: TensorFlow, Keras, scikit-learn</li>
-            <li>Cloud Services: AWS, Azure</li>
-        </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">Programming Languages: Python, Java, C++, JavaScript, TypeScript, Bash</li>
+                        <li class="list-group-item">Web Development: HTML, CSS, React, Node.js</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">Databases: SQL, MongoDB</li>
+                        <li class="list-group-item">Tools: Git, Docker, Linux, Kubernetes</li>
+                        <li class="list-group-item">Machine Learning: TensorFlow, Keras, scikit-learn</li>
+                        <li class="list-group-item">Cloud Services: AWS, Azure</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <h3>Internship at LA RAK (Kenitra)</h3>
-        <p>June 2020 - August 2021</p>
-        <ul>
-            <li>Developed a web application using React and Node.js</li>
-            <li>Improved database performance by optimizing SQL queries</li>
-            <li>Collaborated with a team of developers using Agile methodologies</li>
-        </ul>
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Experience</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h4>Internship at LA RAK (Kenitra)</h4>
+                    <p>June 2020 - August 2021</p>
+                    <ul>
+                        <li>Developed a web application using React and Node.js</li>
+                        <li>Improved database performance by optimizing SQL queries</li>
+                        <li>Collaborated with a team of developers using Agile methodologies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <h3>Bembelbots Project</h3>
-        <p>March 2024</p>
-        <ul>
-            <li>Developed AI algorithms to control robots playing soccer</li>
-            <li>Worked on computer vision for object detection and localization</li>
-            <li>Implemented strategies for autonomous decision-making in dynamic environments</li>
-        </ul>
+    <!-- Projects Section -->
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h4>Bembelbots Project</h4>
+                    <p>March 2024</p>
+                    <ul>
+                        <li>Developed AI algorithms to control robots playing soccer</li>
+                        <li>Worked on computer vision for object detection and localization</li>
+                        <li>Implemented strategies for autonomous decision-making in dynamic environments</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="languages">
-        <h2>Languages</h2>
-        <ul>
-            <li>Arabic: Native</li>
-            <li>German: Fluent</li>
-            <li>English: Fluent</li>
-            <li>French: Native</li>
-        </ul>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Contact</h2>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>Phone: +49 176 77 510804</p>
+            <p>Address: Riedbergallee 4, 60438, Frankfurt am Main</p>
+        </div>
     </section>
 
-    <section id="interests">
-        <h2>Interests</h2>
-        <p>Artificial Intelligence, Cybersecurity, Open Source Contribution</p>
-    </section>
-
-    <footer>
-        <p>Contact: +49 176 77 510804 | Riedbergallee 4, 60438, Frankfurt am Main</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>© 2024 Yahya Missaoui. All Rights Reserved.</p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
